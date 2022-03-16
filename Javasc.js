@@ -53,7 +53,7 @@ function won(){
     for(let i=1;i<limitcounter;i++){
        winner-=10;
     }
-    document.querySelector("#result").innerHTML="You won with "+limitcounter +" attempt(s) ";
+    document.querySelector("#result").innerHTML="You won with "+(limit-limitcounter) +" attempt(s) remaining";
     document.querySelector("#Score").innerHTML=winner+"/100";
     document.querySelector("#guessbtn").style.display="none";
     document.querySelector("#retry").innerHTML="Play again?"
