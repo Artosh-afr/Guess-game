@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600&display=swap');
+
+:root{
+    font-size: 17px;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+    margin:0;
+}
+
+
+
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(40deg, rgb(218, 143, 143),rgb(204, 22, 22));
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1rem;
+    
+    
+}
+main{
+    margin-top: 2rem;
+    padding:2rem;
+    width:50%;
+    border:2px solid black;
+    text-align: center;
+    background-image: linear-gradient(40deg, rgb(228, 182, 182),rgb(204, 22, 22));
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+h1,h2,h3,button{
+    font-family: 'Heebo', sans-serif ;
+}
+
+
+button{
+    max-width:200px;
+    padding:0 20px 0 20px;
+    height:40px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow:0 4px 0 0 black ;
+    cursor: pointer;
+    background-color: gray;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: transform box-shadow .3s  linear;
+    -webkit-transition: transform box-shadow .3s  linear;
+    -moz-transition: transform box-shadow .3s  linear;
+    -ms-transition: transform box-shadow .3s  linear;
+    -o-transition: transform box-shadow .3s  linear;
+    border:none;
+    outline:1px solid rgb(100, 85, 85);
+}
+button:hover{
+    background-color: rgb(88, 94, 99);
+}
+
+button:active{
+ transform: translateY(4px);
+ -webkit-transform: translateY(4px);
+ -moz-transform: translateY(4px);
+ -ms-transform: translateY(4px);
+ -o-transform: translateY(4px);
+ box-shadow:none;
+}
+
+#retry{
+    margin: .5rem 0;
+}
+input[type=text]{
+    width:100px;
+    height:40px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    outline: none;
+    border:1px solid black;
+    text-align: center;
+    transition: width .3s linear;
+    -webkit-transition: width .3s linear;
+    -moz-transition: width .3s linear;
+    -ms-transition: width .3s linear;
+    -o-transition: width .3s linear;
+}
+        input[type=text]:hover{
+            border: 3px solid black;
+        }
+        input[type=text]:focus-visible{
+            border: 3px solid black;
+            width:200px;
+        }
+
+
+        label,p{
+            font-size: 1.2rem
+        }
+
+    #rangecontainer{
+        margin-top: .5rem;
+    }
+    #rangecontainer > h3{
+        margin:.3rem 0 1rem 0;
+    }
+    #rangecontainer >input{
+       margin:.5rem 0 .5rem 0; 
+    }
+    #game{
+        display:none;
+        margin-top: 1rem;
+    } 
+        #guesser{
+            margin: 1rem 0;
+        }
+
+        .output{
+            margin-top: 1rem;
+        }
+        .output>*{
+            margin:.5rem;
+        }
+
+@media(max-width:700px){
+    
+    main{
+        width:100%;
+
+    }
+}
+   
+
+
+

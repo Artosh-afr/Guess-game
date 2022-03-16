@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./Javasc.js" defer></script>
+    <title>Project 2 js guess game</title>
+</head>
+<body>
+    <header>
+        <h1>Practical Project 2:Guessing Game</h1>
+    </header>
+    <main>
+    <aside><button id="retry">Reload</button></aside>
+
+    <section id="rangecontainer">
+        <h2>Please enter the range of the random generator.</h2>
+        <h3>So that the game can begin</h3>
+
+        <label for="min">Enter the minimum: </label><br>
+            <input type="text" name="min" id="min" value=1 />
+        <br>
+            <label for="max">Enter the maximum: </label><br>
+                <input type="text" name="max" id="max" value=100 />
+        <br>
+            <button id="rangebtn">Start game</button>
+      
+        
+    </section>
+
+
+    <section id="game">
+        <h2 id="title"></h2>
+        <label for="guesser">Please enter your number here:</label>
+        <br>
+        <input type="text" name="guesser" id="guesser" />
+        <br>
+        <button onclick="guess()" id="guessbtn">Guess number</button>
+        <div class="output">
+            <h2>Result:</h2>
+            <p id="result">Please guess the number, you have 10 tries.</p>
+            <div>
+                <h2>Score:</h2>
+                <h3 id="Score">I wish you luck</h3>
+            </div>
+        </div>
+    </section>
+   </main>
+</body>
+</html>
