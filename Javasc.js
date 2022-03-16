@@ -42,7 +42,7 @@ location.reload();}
 
 function lost(){
     document.querySelector("#result").innerHTML="You lost. Want to go again?";
-    document.querySelector("#Score").innerHTML=0;
+    document.querySelector("#Score").innerHTML=0+"/100";
     document.querySelector("#guessbtn").style.display="none";
     document.querySelector("#retry").innerHTML="Play again?"
 }
