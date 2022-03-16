@@ -19,10 +19,10 @@
         <h2>Please enter the range of the random generator.</h2>
         <h3>So that the game can begin</h3>
 
-        <label for="min">Enter the minimum: </label><br>
+        <label onclick="this.select();" for="min">Enter the minimum: </label><br>
             <input type="text" name="min" id="min" value=1 />
         <br>
-            <label for="max">Enter the maximum: </label><br>
+            <label onclick="this.select();" for="max">Enter the maximum: </label><br>
                 <input type="text" name="max" id="max" value=100 />
         <br>
             <button id="rangebtn">Start game</button>
@@ -33,9 +33,9 @@
 
     <section id="game">
         <h2 id="title"></h2>
-        <label for="guesser">Please enter your number here:</label>
+        <label  for="guesser">Please enter your number here:</label>
         <br>
-        <input type="text" name="guesser" id="guesser" />
+        <input onclick="this.select();" type="text" name="guesser" id="guesser" />
         <br>
         <button onclick="guess()" id="guessbtn">Guess number</button>
         <div class="output">
