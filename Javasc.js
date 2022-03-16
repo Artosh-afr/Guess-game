@@ -53,7 +53,7 @@ function won(){
     for(let i=1;i<limitcounter;i++){
        winner-=10;
     }
-    document.querySelector("#result").innerHTML="You won with "+limitcounter +" atempt(s) ";
+    document.querySelector("#result").innerHTML="You won with "+limitcounter +" attempt(s) ";
     document.querySelector("#Score").innerHTML=winner+"/100";
     document.querySelector("#guessbtn").style.display="none";
     document.querySelector("#retry").innerHTML="Play again?"
@@ -70,10 +70,10 @@ if(limitcounter<limit || userNum.value==randomNum){
         if(userNum.value==randomNum){
             won()  
         }else if(userNum.value<randomNum && userNum.value >(min-1)){
-            document.querySelector("#result").innerHTML=`Too low you have ${limit-limitcounter} atempt(s) left`;
+            document.querySelector("#result").innerHTML=`Too low you have ${limit-limitcounter} attempt(s) left`;
         }else if(userNum.value>randomNum && userNum.value <(max+1)){
-            document.querySelector("#result").innerHTML=`Too high you have ${limit-limitcounter} atempt(s) left`;
-        }else{document.querySelector("#result").innerHTML=`Error. Please choose between ${min} and ${max} you have ${limit-limitcounter} atempt(s) left`}
+            document.querySelector("#result").innerHTML=`Too high you have ${limit-limitcounter} attempt(s) left`;
+        }else{document.querySelector("#result").innerHTML=`Error. Please choose between ${min} and ${max} you have ${limit-limitcounter} attempt(s) left`}
 }else{lost()}
 
 
